@@ -1,0 +1,94 @@
+body{
+	background: #1A3B72 ;
+	font-family: Lucida Grande;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+h1{
+	display: inline-block ;
+    text-align: center;
+    font-family: Lucida Grande ;
+	font-size: 40px;
+	margin: 20px 0px 10px;
+	
+}
+
+.container{
+	display: flex;/*las imagenes se colocan una tras otra*/
+	width: 100%;
+	padding: 5% 2%;/*anchura x altura*/
+	box-sizing: border-box;
+	height: 100vh;
+}
+.box{
+	flex: 1;/*respentando el espacio entre imegnes*/
+	overflow: hidden;/*ocultar el scroll*/
+	margin: 9px;/*separar las imagenes*/
+	line-height: 0;	
+}
+.box > img{
+	width: 155%;
+	height:  calc(100% - 10vh);
+	object-fit: cover;
+	transition: 400ms;
+}
+.box > span{
+	font-size: 35px;
+	font-family: Calibri Light;
+	color: white;
+	display: block;
+	text-align: center;
+	height: 12vh;
+	line-height: 2.7;
+}
+.box:hover{
+	flex: 45%;
+}
+.box:hover > img{
+	width: 100%;
+	height: 100%;/*ocultar los span*/
+
+}
+
+.footer-copy-redes{
+	width: 100%;
+	border-top: 2px solid white;
+}
+.main-copy-redes{
+	width: 97%;
+	max-width: 1000px;
+	padding: 15px 0px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+.main-copy-redes .footer-copy{
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.main-copy-redes .footer-redes{
+	width: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer-redes a{
+	display: inline-block;
+	text-decoration: none;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	background: white;
+	color: #1A3B72;
+	text-align: center ;
+}
+.footer-redes a:hover{
+	color: #1A3B72;
+	transform: scale(1.4);
+}

@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans condensed' ;
+	background-image: url(../img/fondoiuem.jpg);
+	background-size: cover; /* evita que se vea pixeleada */
+	background-attachment: fixed; /*queda fija la imagen*/
+}
+/*particulas*/
+#particles-js{
+width: 100%;
+height: 100%;
+position: fixed;
+background: rgba(137, 161, 223, 0.4);
+z-index: -2;
+}	
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding: 20px 30px;
+	position: relative;
+	z-index: 99;
+	opacity: 0.8;
+}
+header{
+	position: relative;
+	height: auto;
+}
+header .menu{
+	background: rgba(54, 106, 236, 0.8);
+	overflow: hidden;
+}
+header .logo{
+	color: rgba(253, 254, 254, 0.8);
+	float: left;
+	font-size: 40px;
+	line-height: 70px;
+	margin-top: -20px;
+	color: white;
+}
+header nav{
+	float: right;
+}
+
+header nav ul{
+	liste-styli: none;
+	list-style: none;
+}
+header nav li {
+	float: left;
+}
+header nav ul li a{
+	color: rgba(253, 254, 254, 0.8) ;
+	text-decoration: none;
+	display: block;
+	font-size: 21px;
+	padding: 0 25px;
+	line-height: 70px; /*el tamaño de altura es el nav*/
+}
+header nav li:hover{
+	color: rgba(242, 243, 244, 0.7);
+}
+header nav li a:hover{
+	color: #ffffff;
+}
+.texto{
+	color: #ffffff;
+	position: relative;
+	padding: 150px 0;
+	text-align: center;
+	font-weight: 800;
+	text-shadow: 4px 3px 0px #7a7a7a;
+}
+.texto h2, .texto p{
+	display: inline-block;
+	padding: 5px 20px;
+}
+.texto h2{
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+.texto p{
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.principal{
+	padding: 20px;
+	background: #ffffff;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.principal article p{
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+.principal article .fecha{
+	color: #939393
+}
+.social-links ul{
+   padding: 10px;
+   width: 300px;
+   height: 30px;
+   margin: auto;
+   display: flex;
+}
+.social-items{
+	list-style: none;
+}
+.social-items a{
+	padding: 10px 19px;
+	font-size: 35px;
+	color: #ffffff;
+	transition: all 25ms;
+}
+.social-items a:hover{
+	color:  blue;
+}
+.social-links{
+	color: #ffffff;
+	display: flex;
+}
+.outer-footer{
+	margin-top: 35px;
+	top: 25px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	background-color: black;
+}
+.outer-footer a{
+	color: white;
+	text-decoration: none;
+}

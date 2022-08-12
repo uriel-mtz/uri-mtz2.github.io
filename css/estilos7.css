@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+body{
+	background: #85C1E9;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+	background: #F6F9B4;
+	color: #111FE5;
+	text-align: center;
+	padding: 40px 0;
+	
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+} 
+
+header .titulo{
+	font-size: 60px;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+main {
+	margin-top: 200px;
+}
+
+main .contenedor {
+	width: 85%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+/css de video/
+.fm-video{
+	width: 100%;
+	-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(75,227,101,0.5); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(75,227,101,0.5);
+
+}
+
+.fm-video .vjs-control-bar{
+	background: #D0D624;
+	color: #3E53E6;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #E68B3E;
+}
+
+.fm-video .vjs-slider{
+	background: #FA170C;
+}
+
+
+
+.video-js:hover .vjs-big-play-button{
+	background:#D0D624;
+
+}
+
+.vjs-big-play-button{
+	background: rgba(0, 0, 0, 0.3);
+	width: 70px;
+	height: 70px;
+	border: none;
+}
+
+article{
+	margin: 5px;
+	background: #fff;
+	color: #000;
+	font-size: 17px;
+	line-height: 30px;
+	padding: 40px;
+}
+
+article h3 {
+	color: #841A8D;
+	font-size: 40px;
+	margin-bottom: 25px;
+}

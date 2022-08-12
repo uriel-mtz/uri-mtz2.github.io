@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Berlin Sans FB;
+}
+.content-all{
+	width: 100%;
+}
+.content-image{
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	margin-top: 130px;
+	position: relative; /*ocupa solamente lo de la imagen*/
+	overflow: hidden; /*solo se visualiza en la imagen */
+}
+.content-image img{
+	width: 100%;
+	transition: all 0.4s;
+}
+/*iniciamos con las sombras*/
+.content-1{
+	width: 1000px;
+	height: 1000px;
+	position: absolute; /*no ocupe otro espacio*/
+	background: rgba(53, 120, 114, 0.4);
+	top: 0;
+	transform: rotate(-30deg);
+	margin-left: -750px;
+	transition: all 0.3s;
+}
+.content-2{
+	width: 1000px;
+	height: 1000px;
+	position: absolute; /*no ocupe otro espacio*/
+	background: rgba(53, 120, 114, 0.4);
+	top: 0;
+	transform: rotate(-30deg);
+	margin-left: -800px;
+	transition: all 0.5s;
+}.content-3{
+	width: 1000px;
+	height: 1000px;
+	position: absolute; /*no ocupe otro espacio*/
+	background: rgba(114, 196, 104, 0.5);
+	top: 0;
+	transform: rotate(30deg);
+	margin-left: -800px;
+	margin-top: -500px;
+	transition: all 0.9s;
+}.content-4{
+	width: 1000px;
+	height: 1000px;
+	position: absolute; /*no ocupe otro espacio*/
+	background: rgba(114, 196, 104, 0.5);
+	top: 0;
+	transform: rotate(30deg);
+	margin-left: -850px;
+	margin-top: -500px;
+	transition: all 0.75s;
+	box-shadow: 0px 1px 20px -5px #72C468;
+}
+/*iniciamos el efecto hover*/
+.content-image:hover .content-1{
+	width: 200%;
+	transition: all 0.9s;
+}
+.content-image:hover .content-2{
+	width: 200%;
+	transition: all 0.5s;
+}
+.content-image:hover .content-3{
+	width: 200%;
+	transition: all 0.6s;
+}
+.content-image:hover .content-4{
+	width: 200%;
+	transition: all 0.8s;
+}
+.content-image:hover img{
+	transform: scale(1.4);
+	transition: all 0.4s;
+	opacity: 0.7;
+}
